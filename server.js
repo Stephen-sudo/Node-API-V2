@@ -21,7 +21,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/products", ProductRouter);
 app.get("/", (req, res) => {
-  // throw new Error("Fake error");
   res.send("Hello World");
 });
 
